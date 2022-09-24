@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C204B22028DC96DB001EDD1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D295728D3726E009CC395 /* ContentView.swift */; };
 		C23D296F28D37273009CC395 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D296E28D37273009CC395 /* Tests_iOS.swift */; };
 		C23D297128D37273009CC395 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D297028D37273009CC395 /* Tests_iOSLaunchTests.swift */; };
 		C23D297B28D37273009CC395 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D297A28D37273009CC395 /* Tests_macOS.swift */; };
@@ -14,9 +15,10 @@
 		C23D297E28D37273009CC395 /* Fitness_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D295628D3726E009CC395 /* Fitness_AppApp.swift */; };
 		C23D297F28D37273009CC395 /* Fitness_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D295628D3726E009CC395 /* Fitness_AppApp.swift */; };
 		C23D298028D37273009CC395 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D295728D3726E009CC395 /* ContentView.swift */; };
-		C23D298128D37273009CC395 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D295728D3726E009CC395 /* ContentView.swift */; };
 		C23D298228D37273009CC395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23D295828D37272009CC395 /* Assets.xcassets */; };
 		C23D298328D37273009CC395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23D295828D37272009CC395 /* Assets.xcassets */; };
+		C2F3834528DA502800D39353 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3834428DA502800D39353 /* HealthStore.swift */; };
+		C2F3834628DA502800D39353 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3834428DA502800D39353 /* HealthStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		C23D297628D37273009CC395 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23D297A28D37273009CC395 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		C23D297C28D37273009CC395 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		C2CA92F228DB40AD00A8A17C /* Fitness App (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fitness App (iOS).entitlements"; sourceTree = "<group>"; };
+		C2F3834428DA502800D39353 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		C2F3834728DA523900D39353 /* Fitness-App--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fitness-App--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,8 @@
 		C23D295028D3726E009CC395 = {
 			isa = PBXGroup;
 			children = (
+				C2CA92F228DB40AD00A8A17C /* Fitness App (iOS).entitlements */,
+				C2F3834728DA523900D39353 /* Fitness-App--iOS--Info.plist */,
 				C23D295528D3726E009CC395 /* Shared */,
 				C23D296428D37273009CC395 /* macOS */,
 				C23D296D28D37273009CC395 /* Tests iOS */,
@@ -98,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C23D295628D3726E009CC395 /* Fitness_AppApp.swift */,
+				C2F3834428DA502800D39353 /* HealthStore.swift */,
 				C23D295728D3726E009CC395 /* ContentView.swift */,
 				C23D295828D37272009CC395 /* Assets.xcassets */,
 			);
@@ -222,7 +230,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = Simeon;
 				TargetAttributes = {
 					C23D295C28D37272009CC395 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -300,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C23D298028D37273009CC395 /* ContentView.swift in Sources */,
+				C2F3834528DA502800D39353 /* HealthStore.swift in Sources */,
 				C23D297E28D37273009CC395 /* Fitness_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,8 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C23D298128D37273009CC395 /* ContentView.swift in Sources */,
+				C2F3834628DA502800D39353 /* HealthStore.swift in Sources */,
 				C23D297F28D37273009CC395 /* Fitness_AppApp.swift in Sources */,
+				C204B22028DC96DB001EDD1B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +391,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -438,6 +450,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -461,10 +474,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Fitness App (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FGVNBAS4V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fitness-App--iOS--Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app requests access to your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app requests access to your health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,10 +508,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Fitness App (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FGVNBAS4V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fitness-App--iOS--Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app requests access to your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app requests access to your health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -521,9 +544,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -547,9 +572,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -612,6 +639,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
@@ -630,6 +658,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
